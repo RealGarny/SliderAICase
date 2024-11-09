@@ -1,3 +1,10 @@
+import { SliderPage } from "pages/SliderPage";
+import "../styles/index.scss";
+
 export const App = () => {
-    return <div>hello, world!</div>;
+    return (
+        <div className="app default">
+            <SliderPage />
+        </div>
+    );
 };

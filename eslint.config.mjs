@@ -15,6 +15,7 @@ export default [
         rules: {
             "react/jsx-indent": [2, 4],
             "react/react-in-jsx-scope": "off",
+            "react/prop-types": "off",
             "react/jsx-props-no-spreading": "warn",
             "sort-keys": "off",
             indent: [2, 4],

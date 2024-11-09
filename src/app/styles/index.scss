@@ -1,0 +1,19 @@
+@use "reset";
+@use "variables/globals";
+@use "themes/default";
+
+.app {
+    background: var(--bg-color);
+    color: var(--font-color);
+    height: 100vh;
+    font: var(--font-m);
+}
+
+.content-page {
+    display: flex;
+}
+
+.page-wrapper {
+    flex-grow: 1;
+    padding: 20px;
+}

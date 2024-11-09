@@ -1,0 +1,31 @@
+.Button {
+    cursor: pointer;
+    border: none;
+    transition: ease-in-out 0.2s;
+}
+
+.clear {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.contained {
+    padding: 10px 40px;
+    color: #fff;
+    background: var(--primary-color);
+    border-radius: 5px;
+}
+
+.contained:hover {
+    background: var(--secondary-color);
+}
+
+.outline {
+    padding: 10px 15px;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    background: none;
+}
