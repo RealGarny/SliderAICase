@@ -4,8 +4,7 @@ import { SliderNavigation } from "./SliderNavigation/ui/SliderNavigation";
 import { useSlider } from "../providers/SliderProvider/lib/useSlider";
 
 export const SliderPage = () => {
-    const { deleteSelected, setCanvasElements, setSelectedElements, canvasRef, addCanvasElements } =
-        useSlider();
+    const { deleteSelected, canvasRef } = useSlider();
 
     const handleInput = (e: React.KeyboardEvent<HTMLDivElement>) => {
         if (e.key === "Backspace") {

@@ -24,4 +24,4 @@ export interface SliderContextProps {
     canvasRef: React.RefObject<HTMLDivElement>;
 }
 
-export const SliderContext = createContext<SliderContextProps | {}>({});
+export const SliderContext = createContext<SliderContextProps | null>(null);

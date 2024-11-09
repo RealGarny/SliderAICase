@@ -1,6 +1,5 @@
 import classNames from "shared/lib/ClassNames/classNames";
 import * as cls from "./SelectedElement.module.scss";
-import { useState } from "react";
 
 export const SelectedElement = ({
     isSelected,

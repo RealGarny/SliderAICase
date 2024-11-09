@@ -1,10 +1,8 @@
 import { CanvasElement, CanvasElementProps } from "./CanvasElement";
 
-export interface CircleProps extends CanvasElementProps {}
-
 const defaultHeight = 20;
 
-export const Circle: React.FC<CircleProps> = ({ element }) => {
+export const Circle: React.FC<CanvasElementProps> = ({ element }) => {
     return (
         <CanvasElement element={element}>
             <div

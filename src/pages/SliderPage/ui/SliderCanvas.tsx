@@ -7,7 +7,7 @@ import * as cls from "./SliderCanvas.module.scss";
 import { Circle } from "./shapes/Circle";
 import { forwardRef } from "react";
 
-export const SliderCanvas = forwardRef<HTMLDivElement>(function SliderCanvas({}, ref) {
+export const SliderCanvas = forwardRef<HTMLDivElement>(function SliderCanvas(props, ref) {
     const { canvasElements } = useSlider();
     const renderELements = (elements: SliderElementPayload[]): React.ReactNode[] => {
         const result: React.ReactNode[] = [];

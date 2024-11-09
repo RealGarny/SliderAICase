@@ -22,7 +22,7 @@ export default [
                 2,
                 4,
                 {
-                    switchCase: 4,
+                    SwitchCase: 1,
                 },
             ],
             "react/jsx-filename-extension": [2, { extensions: [".js", ".jsx", ".tsx"] }],

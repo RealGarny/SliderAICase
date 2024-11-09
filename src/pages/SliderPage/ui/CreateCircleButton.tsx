@@ -3,7 +3,7 @@ import { SliderElementTypes } from "../providers/SliderProvider/lib/SliderContex
 import { memo } from "react";
 import { useSlider } from "../providers/SliderProvider/lib/useSlider";
 
-export const CreateCircleButton = memo(() => {
+export const CreateCircleButton = memo(function CreateCircleButton() {
     const { addCanvasElements } = useSlider();
     const createCircle = () => {
         addCanvasElements([{ type: SliderElementTypes.CIRCLE }]);
