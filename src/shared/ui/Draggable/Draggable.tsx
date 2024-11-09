@@ -1,12 +1,12 @@
 import { MouseEvent, useRef, useState } from "react";
-import { twoDPoint } from "shared/types/geometry";
+import { TwoDPoint } from "shared/types/geometry";
 
 export interface DraggableProps {
     children: React.ReactNode;
-    position?: twoDPoint;
+    position?: TwoDPoint;
 }
 export const Draggable: React.FC<DraggableProps> = ({ children, position }) => {
-    const [compPosition, setCompPosition] = useState<twoDPoint>(position || { x: 0, y: 0 });
+    const [compPosition, setCompPosition] = useState<TwoDPoint>(position || { x: 0, y: 0 });
     const dragRef = useRef<{ startX: number; startY: number } | null>(null);
 
     const handleMouseDown = (event: React.MouseEvent<HTMLDivElement>) => {
@@ -23,7 +23,6 @@ export const Draggable: React.FC<DraggableProps> = ({ children, position }) => {
         if (dragRef.current) {
             const newX = event.clientX - dragRef.current.startX;
             const newY = event.clientY - dragRef.current.startY;
-            console.log({ newX, newY });
             setCompPosition({
                 x: newX,
                 y: newY,

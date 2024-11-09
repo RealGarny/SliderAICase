@@ -1,5 +1,13 @@
 import { Button } from "shared/ui/Button/Button";
+import { SliderElementTypes } from "../providers/SliderProvider/lib/SliderContext";
+import { memo } from "react";
+import { useSlider } from "../providers/SliderProvider/lib/useSlider";
 
-export const CreateCircleButton = () => {
-    return <Button>Добавить круг</Button>;
-};
+export const CreateCircleButton = memo(() => {
+    const { addCanvasElements } = useSlider();
+    const createCircle = () => {
+        addCanvasElements([{ type: SliderElementTypes.CIRCLE }]);
+    };
+
+    return <Button onClick={createCircle}>Добавить круг</Button>;
+});

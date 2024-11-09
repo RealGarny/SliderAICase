@@ -1,6 +1,8 @@
 import { CreateCircleButton } from "../../CreateCircleButton";
 
-export const SliderNavigation = () => {
+export interface SliderNavigation {}
+
+export const SliderNavigation: React.FC<SliderNavigation> = () => {
     return (
         <>
             <CreateCircleButton />

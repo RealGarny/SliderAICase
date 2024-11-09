@@ -1,1 +1,1 @@
-export type twoDPoint = { x: number; y: number };
+export type TwoDPoint = { x: number; y: number };

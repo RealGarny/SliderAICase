@@ -18,7 +18,13 @@ export default [
             "react/prop-types": "off",
             "react/jsx-props-no-spreading": "warn",
             "sort-keys": "off",
-            indent: [2, 4],
+            indent: [
+                2,
+                4,
+                {
+                    switchCase: 4,
+                },
+            ],
             "react/jsx-filename-extension": [2, { extensions: [".js", ".jsx", ".tsx"] }],
             "import/no-unresolved": "off",
             "no-unused-vars": "off",
